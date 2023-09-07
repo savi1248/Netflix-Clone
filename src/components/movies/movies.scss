@@ -1,0 +1,29 @@
+.list {
+    width: 100%;
+    margin-top: 40px;
+
+
+  
+    .listTitle {
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 50px;
+      
+
+}
+    
+    .container{
+        margin-left: 50px;
+        display: flex;
+        margin-top: 20px;
+        width:max-content;
+        transform: translateX(0px);
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    
+   
+       
+}
+

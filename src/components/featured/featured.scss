@@ -1,0 +1,117 @@
+// .featured {
+//  background: url('https://wallpaperaccess.com/full/1087433.jpg');
+//  background-position: 50%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: 100%;
+//     position: absolute;
+    
+//     width: 103%;
+// }
+
+
+.featured {
+    height: 90vh;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .head{
+        font-size: 58px;
+        font-weight: 900;
+        color: red;
+        
+      }  
+      .info {
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 100px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        
+    img {
+        width: 400px;
+      }
+  
+      .desc {
+        margin: 20px 0px;
+        font-weight: 400;
+        margin-top: 2px;
+        font-size: medium;
+        
+      }
+      .buttons {
+        display: flex;
+      
+      button{
+        padding: 5px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 10px;
+      
+        cursor: pointer;
+        &.play {
+            background-color: white;
+            color: var(--main-color);
+          }
+  
+          &.more {
+            background-color: grey;
+            
+            color: white;
+          }
+           span {
+            margin-left: 5px;
+          }
+  
+      }
+        
+}
+}
+}
+.title-info-metadata-wrapper {
+  margin-top: 16px;
+}
+.title-info-metadata-item {
+  color: #a3a3a3;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-left: 5px;
+ 
+}
+ .info-spacer {
+  color: #a3a3a3;
+  margin: 0 4px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+ .maturity-number {
+  border: 1px solid #a1a1a1;
+  color: #a3a3a3;
+  padding: 0 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.title-data-info-item-label {
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.cont {
+  font-weight: 500;
+  font-size: 16px;
+  color:white;
+}

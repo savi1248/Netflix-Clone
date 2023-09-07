@@ -1,0 +1,77 @@
+.movie-list-container{
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.movie-list-container .title{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    padding-left: 47px;
+}
+
+.movie-list-container .movies {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 40px;
+}
+.movie-list-container .movies .movie{
+   margin-right: 15px;
+    // width: 15rem;
+    height: 140px;
+    transition: transform 200ms ease-in-out;
+    //  margin: 200ms ease-in-out;
+    background-size: cover;
+    background-position: center;
+   
+}
+   
+
+.movie-list-container .movies .movie:hover{
+    cursor: pointer;
+    // margin: 0px 10px;
+    transform: scale(1.1);
+    
+}
+
+.movie-list-container .movies section{
+    position: relative;
+    display: grid;
+    margin: 20px 8px;
+    grid-template-columns: repeat(5, auto);
+
+}
+.movie-list-container .movies section .Previous{
+    z-index: 1;
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+}
+.movie-list-container .movies section .Next{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+.movie-list-container .movies section .Previous {
+    background: linear-gradient(to right, rgba(0, 0, 0,
+    0.8), transparent);
+}
+
+.movie-list-container .movies section .Next {
+    background: linear-gradient(to right, rgba(0, 0, 0,
+    0.8), transparent);
+}
+.movie-list-container .movies section .Next svg,
+.movie-list-container .movies section .Previous svg{
+    color: white;
+    font-size: 50px;
+}

@@ -1,0 +1,77 @@
+.tvshow-list-container{
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.tvshow-list-container .title{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    padding-left: 47px;
+}
+
+.tvshow-list-container .tvshows  {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 40px;
+}
+.tvshow-list-container .tvshows  .tvshow{
+   margin-right: 15px;
+    // width: 15rem;
+    height: 140px;
+    transition: transform 200ms ease-in-out;
+    //  margin: 200ms ease-in-out;
+    background-size: cover;
+    background-position: center;
+   
+}
+   
+
+.tvshow-list-container .tvshows  .tvshow:hover{
+    cursor: pointer;
+    // margin: 0px 10px;
+    transform: scale(1.1);
+    
+}
+
+.tvshow-list-container .tvshows  section{
+    position: relative;
+    display: grid;
+    margin: 20px 8px;
+    grid-template-columns: repeat(5, auto);
+
+}
+.tvshow-list-container .tvshows  section .Previous{
+    z-index: 1;
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+}
+.tvshow-list-container .tvshows  section .Next{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+.tvshow-list-container .tvshows  section .Previous {
+    background: linear-gradient(to right, rgba(0, 0, 0,
+    0.8), transparent);
+}
+
+.tvshow-list-container .tvshows  section .Next {
+    background: linear-gradient(to right, rgba(0, 0, 0,
+    0.8), transparent);
+}
+.tvshow-list-container .tvshows section .Next svg,
+.tvshow-list-container .tvshows section .Previous svg{
+    color: white;
+    font-size: 50px;
+}
